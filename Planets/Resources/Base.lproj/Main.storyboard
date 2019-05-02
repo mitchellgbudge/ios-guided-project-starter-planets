@@ -31,28 +31,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eBi-Xw-kaM">
-                                            <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-WI-F2N">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="111.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-4g-pYx">
-                                                    <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-WI-F2N">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="111.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-4g-pYx">
+                                            <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="eBi-Xw-kaM" firstAttribute="leading" secondItem="Ln3-Cc-zgL" secondAttribute="leading" id="K6V-mk-QPT"/>
-                                    <constraint firstAttribute="trailing" secondItem="eBi-Xw-kaM" secondAttribute="trailing" id="UJd-3a-5rK"/>
-                                    <constraint firstAttribute="bottom" secondItem="eBi-Xw-kaM" secondAttribute="bottom" id="UiI-fF-zku"/>
-                                    <constraint firstItem="eBi-Xw-kaM" firstAttribute="top" secondItem="Ln3-Cc-zgL" secondAttribute="top" id="VxR-yb-F6a"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="aXU-WI-F2N" id="4OY-Ka-bRB"/>
                                     <outlet property="textLabel" destination="hVe-4g-pYx" id="Mnc-iT-krj"/>
